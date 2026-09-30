@@ -1,0 +1,131 @@
+body { 
+    background-color: #f8f9fa; 
+    font-family: 'Geist', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 600; /* Bolder text */
+}
+.navbar.bg-white { 
+    border-bottom: 1.5px solid #dee2e6; /* Thicker stroke */
+}
+.card { 
+    border-radius: 0.75rem; 
+    border: none;
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); */ /* Shadow removed as requested */
+}
+/* --- NEW Stat Card Clickable Styles --- */
+.stat-card {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.stat-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.07);
+}
+.stat-card.active {
+    box-shadow: 0 0 0 2px #0d6efd; /* Blue border when active */
+    transform: translateY(-3px);
+}
+/* --- End New Styles --- */
+
+.table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+.table th, .table td {
+    border-top: none;
+    border-bottom: 1.5px solid #f1f3f5; /* Thicker stroke */
+    padding: 1rem 1.25rem;
+    vertical-align: middle;
+}
+.table tr:last-child td {
+    border-bottom: none;
+}
+.table thead th { 
+    background-color: #ffffff; /* White header */
+    border-bottom: 1.5px solid #e9ecef; /* Thicker stroke */
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    color: #6b7280;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.table-hover tbody tr:hover {
+    background-color: #f8f9fa;
+}
+/* Ensure table corners are rounded with the card */
+.card .table-responsive {
+    border-radius: 0.75rem;
+}
+.card .table {
+    border-radius: 0.75rem;
+    overflow: hidden;
+}
+.btn {
+    border-radius: 0.375rem; /* rounded-md */
+}
+/* --- NEW Spinner Alignment in Buttons --- */
+.btn .spinner-border {
+    vertical-align: middle;
+}
+.btn .btn-text + .spinner-border {
+    margin-left: 0.5rem;
+}
+/* --- End New Styles --- */
+
+.modal-content {
+    border-radius: 0.75rem;
+    border: none;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+.badge {
+    font-size: 0.8rem;
+    padding: 0.5em 0.75em;
+    border-radius: 0.375rem; /* rounded-md */
+    font-weight: 600;
+}
+.status-online { 
+    color: #067d53; /* Fainter text */
+    background-color: #e6fcf2; /* Fainter bg */
+}
+.status-offline { 
+    color: #5a6472; /* Fainter grey text */
+    background-color: #f3f4f6; /* Fainter grey background */
+}
+.status-unknown { 
+    color: #5a6472; 
+    background-color: #f3f4f6; 
+}
+.form-control {
+    background-color: #f9fafb;
+    border: 1.5px solid #e5e7eb; /* Thicker stroke */
+}
+.form-control:focus {
+    background-color: #ffffff;
+    border-color: #0d6efd;
+    border-width: 1.5px; /* Maintain stroke on focus */
+    box-shadow: 0 0 0 0.2rem rgba(13,110,253,.25);
+}
+.stat-number {
+    font-size: 2.75rem; /* Larger number */
+    font-weight: 700; /* Bolder number */
+}
+/* Action buttons in table */
+.btn-link {
+    text-decoration: none;
+    font-weight: 600;
+    padding-left: 0;
+    padding-right: 0;
+}
+.btn-link:hover {
+    text-decoration: underline;
+}
+/* Custom faint colors for action links */
+.action-ping {
+    color: #5090f7; /* Fainter blue */
+}
+.action-edit {
+    color: #f5a623; /* Fainter orange */
+}
+.action-delete {
+    color: #f76874; /* Fainter red */
+}
